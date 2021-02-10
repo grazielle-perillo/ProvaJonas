@@ -19,7 +19,7 @@
         <!-- //image logo -->
   
         <div class="logo-icon text-center">
-          <a href="index.html" title="logo"><img src="assets/images/logo.png" alt="logo-icon"> </a>
+          <a [routerLink]="['/dash']" title="logo"><img src="assets/images/logo.png" alt="logo-icon"> </a>
         </div>
         <!-- //logo end -->
   
@@ -27,8 +27,7 @@
   
           <!-- sidebar nav start -->
           <ul class="nav nav-pills nav-stacked custom-nav">
-            <li><a [routerLink]="['/dash']"><i class="fa fa-tachometer"></i><span> Dashboard</span></a>
-            </li>
+            <li><a [routerLink]="['/dash']"><i class="fa fa-tachometer"></i><span> Dashboard</span></a></li>
             <li><a [routerLink]="['/cards']"><i class="fa fa-cogs"></i> <span>Default cards</span></a></li>
             <li><a [routerLink]="['/pricing']"><i class="fa fa-table"></i> <span>Pricing tables</span></a></li>
             <li><a [routerLink]="['/blocks']"><i class="fa fa-th"></i> <span>Content blocks</span></a></li>
